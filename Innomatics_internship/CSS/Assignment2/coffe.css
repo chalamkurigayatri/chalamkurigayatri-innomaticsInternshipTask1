@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    height: 60px;
+    background-color: rgb(242, 179, 85);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+}
+
+.navlogo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url(logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:left;
+    height: 50px;
+    width: 100%;
+}
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+.nav-links ul li {
+    display: inline;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links ul li a:hover {
+    color: lightgray; /* Hover effect */
+}
+/* home page */
+#home {
+    background-image: url('home.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+#home h2 {
+    font-size: 50px; 
+    font-weight: bold;
+    color: rgb(243, 195, 65)
+}
+
+#home p {
+    font-size: 24px; 
+    max-width: 600px; 
+    line-height: 1.5;
+}
+/* menu*/
+
+#menu {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f1e5; 
+}
+
+#menu h2 {
+    font-size: 40px;
+    color: #5a3e2b; /* Coffee brown color */
+    margin-bottom: 20px;
+}
+
+/* Category Headers */
+.menu-category {
+    font-size: 30px;
+    color: #d2691e; /* Dark brown */
+    margin: 30px 0 10px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    color: #5a3e2b;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+/* about us*/
+#about {
+    background-color: #f8f1e5; /* Light coffee color background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    gap: 40px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #5a3e2b; /* Dark brown */
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* contact form */
+#contact-form {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f1e5; /* Light coffee color */
+}
+
+#contact-form h2 {
+    font-size: 40px;
+    color: #5a3e2b; /* Dark brown */
+    margin-bottom: 20px;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #5a3e2b;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form-container button {
+    background-color: rgb(242, 179, 85);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.contact-form-container button:hover {
+    background-color: #d2691e;
+}
+/* Footer*/
+#footer {
+    background-color: rgb(242, 179, 85); /* Coffee brown */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container p {
+    font-size: 16px;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        text-align: center;
+        padding: 10px;
+    }
+
+    #home {
+        font-size: 50px;
+        padding: 20px;
+    }
+
+    #menu .menu-container {
+        flex-direction: column;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .contact-form-container form {
+        width: 80%;
+    }
+}
+
+/* Mobile  */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links ul li {
+        margin-bottom: 10px;
+    }
+
+    #home {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    #home h2 {
+        font-size: 35px;
+    }
+
+    #menu {
+        padding: 40px 20px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .contact-form-container form {
+        width: 100%;
+    }
+
+    #footer {
+        padding: 10px;
+    }
+}
+
+/* Mobile Small*/
+@media (max-width: 375px) {
+    #home h2 {
+        font-size: 28px;
+    }
+
+    #home p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .menu-category {
+        font-size: 24px;
+    }
+
+    .menu-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .contact-form-container form {
+        padding: 10px;
+    }
+}
